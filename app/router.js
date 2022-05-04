@@ -9,6 +9,10 @@ Router.map(function() {
   this.route('about');
   this.route('bookmarks', function() {
     this.route('new');
+
+    this.route('edit', {
+      path: '/edit/:bookmark_id'
+    });
   });
 });
 
