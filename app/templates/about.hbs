@@ -4,8 +4,10 @@
 
 {{#each model as |bookmark|}}
   <article id={{bookmark.id}}>
-    {{bookmark.title}}
-    -
-    {{bookmark.about}}
+    <a href={{bookmark.link}} target="_blank">
+      {{bookmark.title}}
+      -
+      {{bookmark.about}}
+    </a>
   </article>
 {{/each}}
