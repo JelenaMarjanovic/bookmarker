@@ -12,4 +12,5 @@ export default DS.Model.extend({
       return new Date();
     },
   }),
+  bookmarks: DS.hasMany("bookmark"),
 });
