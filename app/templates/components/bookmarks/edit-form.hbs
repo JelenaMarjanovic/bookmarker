@@ -18,6 +18,9 @@
   {{input type="hidden" name="user_id" value=bookmark.user_id}}
   <input type="submit" value="Save" />
   <button {{action "cancel"}} id="cancel">Cancel</button>
+  {{#unless bookmark.isNew}}
+    <button {{action "delete" bookmark}} id="delete">Delete</button>
+  {{/unless}}
 </form>
 
 {{yield}}
